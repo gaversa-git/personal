@@ -1,0 +1,5 @@
+<launch>
+    <node name="q_learning" pkg="q_learning_project" type="q_learning.py" output="screen"/>
+    <node name="virtual_reset_world_q_learning" pkg="q_learning_project" type="virtual_reset_world.py" respawn="false" output="screen"/>
+</launch>
+

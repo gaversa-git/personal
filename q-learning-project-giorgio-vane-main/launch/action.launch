@@ -1,0 +1,7 @@
+<launch>
+    <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+    
+    <node name="perception" pkg="q_learning_project" type="perception.py" output="screen"/>
+    <node name="virtual_reset_world_q_learning" pkg="q_learning_project" type="virtual_reset_world.py" respawn="false" output="screen"/>
+    <node name="phantom_robot_movement" pkg="q_learning_project" type="phantom_robot_movement.py" respawn="false" output="screen"/>
+</launch>
