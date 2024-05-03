@@ -1,6 +1,0 @@
-*/__pycache__/
-*/venv
-.coverage
-.DS_Store
-.vscode
-profile.stats
